@@ -1,0 +1,336 @@
+/*共通設定*/
+body {
+    padding-top: 80px;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    font-size: 16px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+}
+@media (min-width : 992px) {
+    h2 {
+        font-size: 48px;
+    }
+}
+
+/*主選單客製*/
+nav.navbar {
+    background-color: #aa0601;
+    height: 80px;
+}
+.navbar-brand img {
+    width: 80px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff0;
+}
+.navbar-light .navbar-nav .nav-item {
+    margin-right: 64px;
+}
+.navbar-light .navbar-nav .nav-item:last-child {
+    margin-right: 0px;
+}
+
+/*首頁版頭*/
+header.index_banner {
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/home-header-sm.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 396px;
+    max-height: 767px;
+    display: flex;
+    align-items: center;
+}
+header.index_banner .container {
+    /*padding: 300px 0px;*/
+    text-align: right;
+}
+header.index_banner .container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #650300;
+}
+header.index_banner .container h1 small {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+header.index_banner .container .index_banner_btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-color: #aa0601;
+}
+header.index_banner .container .index_banner_btn:hover {
+    color: #ff0;
+}
+@media (min-width : 992px) {
+    header.index_banner {
+        background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/home-header.png');
+        min-height: 500px;
+        max-height: 767px;
+    }
+    header.index_banner .container h1 {
+        font-size: 64px;
+    }
+    header.index_banner .container h1 small {
+        font-size: 36px;
+    }
+}
+
+/*首頁區塊一*/
+.bg-1 {
+    background-color: #fbf2f2;
+    padding: 40px 0px;
+}
+.bg-1 h2 {
+    color: #650300;
+}
+.bg-1 .col-12 {
+    text-align: center;
+}
+.bg-1 img {
+    width: 84px;
+}
+.bg-1 h3 {
+    font-size: 24px;
+    font-weight: 700px;
+    color: #650300;
+    margin: 24px auto 8px;
+}
+.bg-1 p {
+    font-weight: 400;
+}
+@media (min-width : 992px) {
+    .bg-1 {
+        padding: 80px 0px;
+    }
+}
+
+
+/*首頁區塊二*/
+.bg-2 {
+    padding: 40px 0px;
+}
+.bg-2 h2 {
+    color: #650300;
+}
+.bg-2 h3 {
+    text-align: center;
+    font-weight: 700;
+    color: #aa0601;
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+@media (min-width : 992px) {
+    .bg-2 {
+        padding: 80px 0px;
+    }
+    .bg-2 h3 {
+        margin-bottom: 0px;
+    }
+}
+
+/*首頁區塊三*/
+.bg-3 {
+    padding: 40px 0px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/index-bg-sm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-3 h2 {
+    color: #FFF;
+}
+.bg-3 .co-branding div {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.bg-3 .co-branding div h3 {
+    background-color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    color: #aa0601;
+    text-align: center;
+}
+@media (min-width : 992px) {
+    .bg-3 {
+        padding: 80px 0px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/index-bg.png');
+    }
+    .bg-3 .co-branding {
+        display: flex;
+    }
+    .bg-3 .co-branding div {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+}
+
+/*首頁區塊四*/
+.recommend-box {
+    border: solid 1px #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
+    margin-bottom: 16px;
+}
+.recommend-box .text-box {
+    padding: 16px;
+}
+.recommend-box .text-box .name {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.recommend-box .text-box p {
+    min-height: 5em;
+}
+.recommend-box .text-box .date {
+    color: #707070;
+    font-size: 14px;
+}
+@media (min-width : 992px) {
+    .recommend-box {
+        margin-bottom: 0px;
+    }
+    .recommend-box .text-box p {
+        min-height: 8em;
+    }
+}
+
+/*表單區*/
+form {
+    text-align: left;
+}
+form .form-control {
+    margin-bottom: 16px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: solid 1px #000;
+    background-color: #fbf2f2;
+}
+form .form-control::placeholder {
+    color: rgba(0, 0, 0, .2);
+}
+form button.btn-primary {
+    display: block;
+    width: 100%;
+    margin: 48px auto 0px;
+    background-color: #aa0601;
+    text-align: center;
+    color: #FFF;
+    padding: 16px;
+    border: none;
+    border-radius: 0px;
+}
+@media (min-width : 992px) {
+    form button.btn-primary {
+        width: 60%;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #aa0601;
+    padding: 24px 0px;
+    color: #FFF;
+    font-weight: 400;
+}
+footer .footernav1 .nav-item a.nav-link {
+    color: #FFF;
+    margin-right: 8px;
+}
+footer .footernav2 .nav-item a.nav-link {
+    padding: 0px;
+    margin-right: 8px;
+}
+footer .footernav2 .nav-item:last-child a.nav-link {
+    margin-right: 0px;
+}
+footer .footernav2 .nav-item a.nav-link img {
+    max-width: 24px;
+}
+footer a.footerlink {
+    font-size: 16px;
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+}
+footer a.footerlink span {
+    font-size: 16px;
+    margin-right: 16px;
+}
+footer hr {
+    border-top: solid 1px #FFF;
+    opacity: 1;
+}
+footer p, footer a.footerlink2 {
+    margin-top: 16px;
+}
+footer a.footerlink2 {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+footer .footerbox1 {
+    order: 2;
+}
+footer .footerbox2 {
+    order: 1;
+}
+@media (min-width : 992px) {
+    footer {
+        padding: 60px 0px 32px;
+    }
+    footer .footernav1 .nav-item a.nav-link {
+        margin-right: 48px;
+    }
+    footer .footernav1 .nav-item a.nav-link:first-child {
+        padding-left: 0px;
+    }
+    footer .footernav1 .nav-item a.nav-link:last-child {
+        margin-right: 0px;
+    }
+    footer .footernav2 .nav-item a.nav-link {
+        padding: 0px;
+        margin-right: 32px;
+    }
+    footer .footernav2 .nav-item:last-child a.nav-link {
+        margin-right: 0px;
+    }
+    footer .footernav2 .nav-item a.nav-link img {
+        max-width: 48px;
+    }
+    footer a.footerlink {
+        font-size: 36px;
+    }
+    footer a.footerlink span {
+        font-size: 36px;
+    }
+    footer p, footer a.footerlink2 {
+        margin-top: 32px;
+        margin-bottom: 0px;
+    }
+    footer a.footerlink2 {
+        display: inline-block;
+    }
+    footer a.footerlink2:first-child {
+        margin-right: 48px;
+    }
+    footer .footerbox1 {
+        order: 1;
+    }
+    footer .footerbox2 {
+        order: 2;
+    }
+}
