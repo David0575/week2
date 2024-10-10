@@ -37,6 +37,37 @@ nav.navbar {
 .navbar-light .navbar-nav .nav-item:last-child {
     margin-right: 0px;
 }
+@media (max-width : 767px) {
+    nav .container {
+        padding: 0px;
+    }
+    nav.navbar {
+        align-items: inherit;
+    }
+    .navbar-brand {
+        display: block;
+        width: 100%;
+    }
+    .navbar-light .navbar-nav {
+        display: block;
+        margin-left: 0% !important;
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        width: 50%;
+        margin: 0px;
+        background-color: #aa0601;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px 0px;
+    }
+}
+@media (min-width : 768px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
 
 /*首頁版頭*/
 header.index_banner {
@@ -233,6 +264,10 @@ form button.btn-primary {
     border: none;
     border-radius: 0px;
 }
+form button.btn-primary:hover {
+    background-color: #aa0601;
+    color: #FF0;
+}
 @media (min-width : 992px) {
     form button.btn-primary {
         width: 60%;
@@ -249,10 +284,7 @@ footer {
 footer .footernav1 .nav-item a.nav-link {
     color: #FFF;
     margin-right: 8px;
-}
-footer .footernav2 .nav-item a.nav-link {
     padding: 0px;
-    margin-right: 8px;
 }
 footer .footernav2 .nav-item:last-child a.nav-link {
     margin-right: 0px;
@@ -281,6 +313,9 @@ footer a.footerlink2 {
     color: #fff;
     text-decoration: none;
     display: block;
+}
+footer .footernav1 .nav-item a.nav-link:hover, footer .footernav2 .nav-item a.nav-link:hover, footer a.footerlink:hover, footer a.footerlink2:hover {
+    color: #FF0;
 }
 footer .footerbox0 {
     display: none;
@@ -318,17 +353,14 @@ footer .footerbox2 {
     footer .footernav1 .nav-item a.nav-link {
         margin-right: 48px;
     }
-    footer .footernav1 .nav-item a.nav-link:first-child {
-        padding-left: 0px;
-    }
-    footer .footernav1 .nav-item a.nav-link:last-child {
+    footer .footernav1 .nav-item a.nav-link:nth-last-child() {
         margin-right: 0px;
     }
     footer .footernav2 .nav-item a.nav-link {
         padding: 0px;
         margin-right: 32px;
     }
-    footer .footernav2 .nav-item:last-child a.nav-link {
+    footer .footernav2 .nav-item:nth-last-child()d a.nav-link {
         margin-right: 0px;
     }
     footer .footernav2 .nav-item a.nav-link img {
