@@ -1,6 +1,5 @@
 /*共通設定*/
 body {
-    padding-top: 80px;
     font-family: "Roboto", "Noto Sans TC", sans-serif;
     font-size: 16px;
 }
@@ -19,7 +18,7 @@ h2 {
 /*主選單客製*/
 nav.navbar {
     background-color: #aa0601;
-    height: 80px;
+    min-height: 80px;
 }
 .navbar-brand img {
     width: 80px;
@@ -44,6 +43,7 @@ nav.navbar {
     }
     nav.navbar {
         align-items: inherit;
+        padding-bottom: 0px;
     }
     .navbar-brand {
         display: block;
@@ -79,7 +79,7 @@ nav.navbar {
 
 /*首頁版頭*/
 header.index_banner {
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/home-header-sm.png');
+    background-image: url('../images/home-header-sm.png');
     background-repeat: no-repeat;
     background-size:cover;
     min-height: 396px;
@@ -115,7 +115,7 @@ header.index_banner .container .index_banner_btn:hover {
 }
 @media (min-width : 992px) {
     header.index_banner {
-        background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/home-header.png');
+        background-image: url('../images/home-header.png');
         min-height: 500px;
         max-height: 767px;
     }
@@ -184,7 +184,7 @@ header.index_banner .container .index_banner_btn:hover {
 /*首頁區塊三*/
 .bg-3 {
     padding: 40px 0px;
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/index-bg-sm.png');
+    background-image: url('../images/index-bg-sm.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -206,7 +206,7 @@ header.index_banner .container .index_banner_btn:hover {
 @media (min-width : 992px) {
     .bg-3 {
         padding: 80px 0px;
-        background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/week3-4/index-bg.png');
+        background-image: url('../images/index-bg.png');
     }
     .bg-3 .co-branding {
         display: flex;
@@ -422,4 +422,175 @@ footer .footerbox2 {
         margin-right: 48px;
     }
     
+}
+
+/*產品列表一-頁首*/
+.nav.product_list_nav .nav-item {
+    flex: 0 0 auto;
+    width: 33.3333333%;
+    text-align: center;
+}
+.nav.product_list_nav .nav-item a {
+    display: block;
+    border: solid 1px #dcdcdc;
+    padding: 16px 0px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav.product_list_nav .nav-item a.active, .nav.product_list_nav .nav-item a:hover {
+    border-bottom: solid 8px #aa0601;
+    padding-bottom: 9px;
+}
+.product_list_bn {
+    display: flex;
+}
+.product_list_bn .img_bg {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media (max-width : 990px) {
+    .porduct_list_header .container {
+        max-width: 100%;
+    }
+    .porduct_list_header .container .col-12 {
+        padding: 0px;
+    }
+    .product_list_bn .img_bg {
+        height: 140px;
+    }
+    .product_list_bn .img_bg.bg01 {
+        background-image: url('../images/product-header-sm-1.png');
+    }
+    .product_list_bn .img_bg.bg02 {
+        background-image: url('../images/product-header-sm-2.png');
+    }
+    .product_list_bn .img_bg.bg03 {
+        background-image: url('../images/product-header-sm-3.png');
+    }
+    .product_list_bn .img_bg.bg04 {
+        background-image: url('../images/product-header-sm-4.png');
+    }
+}
+@media (min-width : 768px) {
+    .nav.product_list_nav .nav-item a {
+        padding: 16px 0px;
+        font-size: 24px;
+    }
+    .product_list_bn .img_bg {
+        height: 300px;
+    }
+}
+@media (min-width : 991px) {
+    .nav.product_list_nav .nav-item a {
+        padding: 24px 0px;
+        font-size: 32px;
+    }
+    .nav.product_list_nav .nav-item a.active, .nav.product_list_nav .nav-item a:hover {
+        padding-bottom: 17px;
+    }
+    .product_list_bn .img_bg {
+        height: 300px;
+    }
+    .product_list_bn .img_bg.bg01 {
+        background-image: url('../images/product-header-1.png');
+    }
+    .product_list_bn .img_bg.bg02 {
+        background-image: url('../images/product-header-2.png');
+    }
+    .product_list_bn .img_bg.bg03 {
+        background-image: url('../images/product-header-3.png');
+    }
+    .product_list_bn .img_bg.bg04 {
+        background-image: url('../images/product-header-4.png');
+    }
+}
+
+/*產品列表一-列表*/
+.product_list {
+    padding: 40px 0px;
+}
+.product_list h1 {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.product_list h1 small {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+}
+.product_list .style01 {
+    margin-bottom: 24px;
+}
+.product_list .style01 .text {
+    display: flex;
+}
+.product_list .style01 .text h3, .product_list .style01 .text p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 24px;
+    align-items: center !important;
+    display: flex;
+}
+.product_list .style01 .text h3 {
+    font-weight: 400;
+}
+.product_list .style01 .text p {
+    font-weight: 500;
+    color: #aa0601;
+    margin-left: auto !important;
+}
+.product_list .style01 .colorbox span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.product_list .style01 .colorbox span.color01 {
+    background-color: #5F3E2D;
+}
+.product_list .style01 .colorbox span.color02 {
+    background-color: #B75929;
+}
+.page-link {
+    font-size: 18px;
+    border-color: #555555;
+    border-radius: 0px;
+    padding: 12px 16px;
+    color: #555555;
+}
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.page-link:hover {
+    border-color: #555555;
+    background-color: #000;
+    color: #FFF;
+}
+@media (min-width : 768px) {
+    .product_list {
+        padding: 80px 0px;
+    }
+    .product_list h1 {
+        font-size: 42px;
+        margin-bottom: 32px;
+    }
+    .product_list h1 small {
+        font-size: 32px;
+    }
+    .product_list .style01 {
+        margin-bottom: 80px;
+    }
+    .product_list .style01 .text h3, .product_list .style01 .text p {
+        font-size: 24px;
+    }
 }
