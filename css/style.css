@@ -24,17 +24,18 @@ nav.navbar {
 .navbar-brand img {
     width: 80px;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .nav .nav-link {
     color: #fff;
     font-size: 20px;
+    padding: 0px;
 }
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .nav .nav-link:hover {
     color: #ff0;
 }
-.navbar-light .navbar-nav .nav-item {
+.navbar-light .nav .nav-item {
     margin-right: 64px;
 }
-.navbar-light .navbar-nav .nav-item:last-child {
+.navbar-light .nav .nav-item:last-child {
     margin-right: 0px;
 }
 @media (max-width : 767px) {
@@ -48,19 +49,26 @@ nav.navbar {
         display: block;
         width: 100%;
     }
-    .navbar-light .navbar-nav {
-        display: block;
+    .navbar-brand img {
+        width: 80px;
+        margin-left: 15px;
+    }
+    .navbar-light .nav {
         margin-left: 0% !important;
         width: 100%;
         flex-direction: row;
     }
-    .navbar-light .navbar-nav .nav-item {
+    .navbar-light .nav .nav-item {
         width: 50%;
         margin: 0px;
         background-color: #aa0601;
         text-align: center;
         font-size: 16px;
         padding: 12px 0px;
+        border: solid 1px #FFF;
+    }
+    .navbar-light .nav .nav-item a.nav-link {
+        padding: 0px;
     }
 }
 @media (min-width : 768px) {
@@ -253,6 +261,14 @@ form .form-control {
 form .form-control::placeholder {
     color: rgba(0, 0, 0, .2);
 }
+form .form-check-input {
+    display: inline-block;
+    border: solid 1px #000;
+    background-color: #fbf2f2;
+}
+foem .form-check-label {
+    display: inline-block;
+}
 form button.btn-primary {
     display: block;
     width: 100%;
@@ -268,7 +284,10 @@ form button.btn-primary:hover {
     background-color: #aa0601;
     color: #FF0;
 }
-@media (min-width : 992px) {
+@media (max-width : 767px) {
+
+}
+@media (min-width : 768px) {
     form button.btn-primary {
         width: 60%;
     }
@@ -306,9 +325,6 @@ footer hr {
     border-top: solid 1px #FFF;
     opacity: 1;
 }
-footer p, footer a.footerlink2 {
-    margin-top: 16px;
-}
 footer a.footerlink2 {
     color: #fff;
     text-decoration: none;
@@ -323,17 +339,33 @@ footer .footerbox0 {
 footer .footerbox1 {
     order: 2;
     display: flex;
-    text-align: left;
+    margin-left: auto !important;
 }
 footer .footerbox2 {
     order: 1;
 }
-@media (max-width : 991px) {
+@media (max-width : 767px) {
+    footer .footernav2 .nav-item {
+        margin-right: 8px;
+    }
+    footer .footernav2 .nav-item a.nav-link {
+        padding: 0px;
+    }
+    footer p, footer a.footerlink2 {
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+    footer p, footer a.footerlink2:nth-last-child() {
+        margin-bottom: 0px;
+    }
     footer .footerbox2 {
         flex: 2 0 0%;
     }
 }
-@media (min-width : 992px) {
+@media (max-width : 991px) {
+    
+}
+@media (min-width : 768px) {
     footer {
         padding: 60px 0px 32px;
     }
