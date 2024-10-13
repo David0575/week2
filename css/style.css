@@ -753,6 +753,39 @@ iframe.gmap {
 }
 
 /*Blog*/
+nav.navbar.blog_menu {
+    background-color: #650300;
+    min-height: auto;
+    padding: 13px 0px;
+}
+nav.navbar.blog_menu .nav-item {
+    margin-right: 48px;
+}
+nav.navbar.blog_menu .nav-item:nth-last-child() {
+    margin-right: 0px;
+}
+nav.navbar.blog_menu .nav-item a.nav-link {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    color: #FFF;
+    text-decoration: none;
+}
+nav.navbar.blog_menu .nav-item a.nav-link:hover {
+    color: #FF0;
+}
+nav.navbar.blog_menu .blog_search a.blog_search_btn {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: right;
+}
+nav.navbar.blog_menu .blog_search a.blog_search_btn:hover {
+    color: #FF0;
+}
+nav.navbar.blog_menu .blog_search .form-control, nav.navbar.blog_menu .blog_search button.btn {
+    padding: 8px;
+}
 a.blog_list_box {
     margin-bottom: 24px;
     text-decoration: none;
